@@ -1,15 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>pr!ma</title>
-    <link rel=”icon” type=”image/gif” href=“/image/favicon.gif”>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  </head>
-  <body>
-    !!!!!!あ
-    <!--ここがリンク -->
-    <a href="https://popogamechan37.wixsite.co-2">
-    </a>
-  </body>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#">My Portfolio</a>
+  </header>
+
+  <div class="gallery">
+    <img src="images/work1.jpg" alt="Work 1">
+    <img src="images/work2.jpg" alt="Work 2">
+    <img src="images/work3.jpg" alt="Work 3">
+    <img src="images/work4.jpg" alt="Work 4">
+    <!-- 画像を必要に応じて追加 -->
+  </div>
+
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
+
+</body>
 </html>

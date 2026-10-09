@@ -11,6 +11,7 @@ body {
 
 body.home-page {
   background: linear-gradient(180deg, #fefefd 0%, #e7edff 55%, #d8cef4 100%);
+  min-height: 100vh;
 }
 
 /* --- 固定ナビゲーション --- */

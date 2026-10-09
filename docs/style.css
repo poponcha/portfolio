@@ -141,7 +141,7 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 500px;
+  width: 200px;
   z-index: 50;
   display: none;
 }
@@ -186,7 +186,7 @@ body.home-page .section-image {
   }
 
   .section-image {
-    width: 80px;
+    width: 100px;
     bottom: 15px;
     right: 15px;
   }

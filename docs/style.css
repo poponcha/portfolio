@@ -141,7 +141,7 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 120px;
+  width: 250px;
   z-index: 50;
   display: none;
 }

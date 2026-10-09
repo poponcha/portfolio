@@ -194,6 +194,7 @@ body.home-page .section-image {
 
 .about-section-wrapper {
   text-align: center;
+  min-height: 50vh;
 }
 
 .work-page {

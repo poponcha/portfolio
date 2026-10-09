@@ -137,7 +137,16 @@ a:hover {
 }
 
 .section-image {
-  margin-top: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  z-index: 50;
+  display: none;
+}
+
+body.home-page .section-image {
+  display: block;
 }
 
 .image-center {
@@ -173,6 +182,12 @@ a:hover {
 
   h1 {
     font-size: 26px;
+  }
+
+  .section-image {
+    width: 80px;
+    bottom: 15px;
+    right: 15px;
   }
 }
 

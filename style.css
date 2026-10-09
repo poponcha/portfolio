@@ -1,0 +1,432 @@
+body {
+  background-color: #fefefd;
+  color: #0f0f0f;
+  font-family: Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.09em;
+  line-height: 1.2em;
+  margin: 0;
+  padding-top: 150px;
+}
+
+body.home-page {
+  background: linear-gradient(180deg, #fefefd 0%, #e7edff 55%, #d8cef4 100%);
+}
+
+/* --- 固定ナビゲーション --- */
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+  z-index: 100;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+#site-name {
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 0.09em;
+  line-height: 1.2em;
+  margin: 0 40px 0 0;
+  color: #0f0f0f;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#site-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- ヘッダー内ASCIIアニメーション領域 --- */
+#ascii-container {
+  position: relative;
+  flex: 1 1 auto;
+  height: 100%;
+  overflow: hidden;
+  cursor: default;
+  background: transparent;
+  color: #0f0f0f;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+#ascii-container .char {
+  position: absolute;
+  transition: transform 0.2s ease-out;
+}
+
+#ascii-container a {
+  color: #363636;
+  text-decoration: none;
+}
+
+#ascii-container a:visited {
+  color: #0f0f0f;
+}
+
+#ascii-container a:hover {
+  color: #ccc;
+}
+
+/* --- コンテンツ側:ヘッダー分の余白だけ確保 --- */
+.content-wrapper {
+  padding: 100px 40px 40px 40px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.09em;
+  line-height: 1.0em;
+  color: #0f0f0f;
+  margin-bottom: 10px;
+}
+
+h2.section-title {
+  font-weight: normal;
+  font-size: 1.5em;
+  letter-spacing: 0.09em;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+a:visited {
+  color: #0f0f0f;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+.coming-soon {
+  color: #999;
+  font-style: italic;
+}
+
+.available {
+  color: #0f0f0f;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.section-image {
+  margin-top: 50px;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+}
+
+.image-center+h1,
+.image-center+h2 {
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  #nav a {
+    margin: 0 15px 0 0;
+  }
+
+  #ascii-container {
+    min-height: 200px;
+    padding: 50px 10px 10px 10px;
+    font-size: 12px;
+    line-height: 2;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+.about-section-wrapper {
+  text-align: center;
+}
+
+.work-page {
+  padding: 100px 40px 40px;
+}
+
+.work-page h1 {
+  margin: 0 0 50px;
+}
+
+.work-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.work-media {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.work-media img,
+.work-media video {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.work-media video {
+  max-height: 600px;
+}
+
+.work-video-embed {
+  flex: 1 1 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.work-video-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.work-description {
+  max-width: 700px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.work-meta {
+  list-style: none;
+  margin: 0 0 80px;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.work-back {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .work-page {
+    padding: 100px 20px 30px;
+  }
+
+  .work-page h1 {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .work-media {
+    margin-bottom: 35px;
+  }
+}
+
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.about-lead {
+  margin: 0 0 80px;
+  font-size: 1.5em;
+}
+
+.about-profile {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 1.05em;
+  line-height: 2;
+}
+
+.about-profile p {
+  margin: 0 0 16px;
+}
+
+.about-exhibitions {
+  margin-top: 90px;
+}
+
+.about-exhibitions .section-title {
+  margin-top: 0;
+}
+
+.exhibitions-list {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.exhibitions-list li {
+  margin-bottom: 14px;
+}
+
+.exhibition-year {
+  display: inline-block;
+  min-width: 52px;
+}
+
+.about-contact {
+  margin-top: 100px;
+}
+
+.about-contact .section-title {
+  margin-top: 0;
+}
+
+.about-contact p {
+  margin: 0;
+}
+
+.about-back {
+  margin-top: 120px;
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    padding: 30px 20px;
+  }
+
+  .about-lead {
+    margin-bottom: 60px;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Workセクションのスタイル */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+  padding: 0 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.work-item {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.work-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  box-shadow: none;
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
+.work-item a:hover .work-thumbnail {
+  opacity: 0.5;
+}
+
+/* カモメ作品はサムネイル全体が収まるように表示 */
+#work-item-6 .work-thumbnail {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: initial;
+  background-color: transparent;
+}
+
+#work-item-6 a {
+  display: inline-block;
+  max-width: 100%;
+}
+
+#work-item-6 .work-title {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.2em;
+}
+
+.work-title {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0.09em;
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* 4番目のアイテムからは新しい行に折り返るが、3列の幅は維持される */
+@media (max-width: 768px) {
+  .work-item {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+
+  .work-list {
+    padding: 0 20px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+}
